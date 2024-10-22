@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Demba Diop</title>
+    <style>
+        body {
+            background-color: #f4f4f9; /* Cette couleur de fond sera écrasée par l'image de fond */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0; /* Enlève le margin par défaut */
+            padding: 0; /* Enlève le padding par défaut */
+            background-image: url('image/code.jpg'); /* Changement de l'image de fond ici */
+            background-size: cover; /* Pour couvrir tout l'écran */
+            background-position: left; /* Pour aligner l'image à gauche */
+            display: flex; /* Utilisation de flexbox pour aligner les éléments */
+            justify-content: flex-end; /* Aligne le conteneur à droite */
+            min-height: 100vh; /* Assure que le corps prend toute la hauteur de la fenêtre */
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px; /* Marge autour du conteneur pour qu'il ne touche pas le bord de l'écran */
+            max-width: 800px; /* Limite la largeur du conteneur */
+        }
+        .header {
+            background-color: rgb(26, 82, 112);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .menu-container {
+            position: relative;
+            display: inline-block;
+            margin-left: auto; /* Pour que le bouton de menu soit aligné à droite */
+        }
+        .menu-btn {
+            background-color: #1a5270;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown-menu a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 12px;
+            display: block;
+        }
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+        .contact, .skills, .experience, .education, .projects, .interests {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f9;
+            color: black;
+        }
+        .section-title {
+            background-color: #ddd;
+            padding: 5px;
+            font-size: 18px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/me.jpeg" alt="Photo de Demba Diop">
+            <div>
+                <h1>DEMBA DIOP</h1>
+                <p>STAGE EN DEVOPS CLOUD</p>
+            </div>
+            <div class="menu-container">
+                <button class="menu-btn">Menu</button>
+                <div class="dropdown-menu">
+                    <a href="#parcours">Mon Parcours</a>
+                    <a href="#projet">Mon Projet Professionnel</a>
+                    <a href="#ambitions">Mes Ambitions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Coordonnées</h2>
+            <table>
+                <tr>
+                    <td class="bold">Téléphone</td>
+                    <td>07 53 34 49 39</td>
+                </tr>
+                <tr>
+                    <td class="bold">Email</td>
+                    <td>diopdemba287@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="bold">Adresse</td>
+                    <td>Île-de-France</td>
+                </tr>
+                <tr>
+                    <td class="bold">Permis</td>
+                    <td>B1, Véhiculé</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile">
+            <h2 id="projet">Profil Personnel</h2>
+            <p>
+                Passionné par l'informatique et spécialisé en réseaux informatiques, je suis actuellement à la recherche d’un stage de fin d’études 
+                conventionné d’une durée de 6 mois, disponible immédiatement. Je souhaite mettre en pratique les compétences que j’ai acquises au cours 
+                de ma formation, tout en continuant à enrichir mes connaissances.
+            </p>
+        </div>
+
+        <div class="education">
+            <h2>Formations</h2>
+            <table>
+                <tr>
+                    <td>2023-2024</td>
+                    <td>Master 2 Ingénierie Innovation Réseau, Université Sorbonne Paris Nord</td>
+                </tr>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Master 1 Ingénierie Innovation Réseau, Université Sorbonne Paris Nord</td>
+                </tr>
+                <tr>
+                    <td>2021-2022</td>
+                    <td>Licence 3 Science pour Ingénieur, Université Sorbonne Paris Nord</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="projects">
+            <h2>Projets Académiques</h2>
+            <ul>
+                <li>Développement de l'application Météo_Live : gestion des APIs, hébergement et tests.</li>
+                <li>Projet VoIP et QoS : Configuration d'un Cisco Call Manager et d'un serveur SIP.</li>
+                <li>Projet Infrastructure WiFi : configuration et supervision d'un point d'accès Cisco Aironet 1100.</li>
+                <li>Analyse de risque et test de vulnérabilité d'une infrastructure de 20 machines.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h2>Expérience Professionnelle</h2>
+            <table>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Équipier polyvalent, McDonald's Gennevilliers</td>
+                </tr>
+                <tr>
+                    <td>2021-2022</td>
+                    <td>Stage technicien électronique, Laboratoire L2TI Sorbonne Paris Nord</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="interests">
+            <h2>Centres d'Intérêt</h2>
+            <table>
+                <tr>
+                    <td>Sport</td>
+                    <td>Football, Natation</td>
+                </tr>
+                <tr>
+                    <td>Culture</td>
+                    <td>Cuisine, Lecture</td>
+                </tr>
+                <tr>
+                    <td>Voyages</td>
+                    <td>Angleterre, Algérie</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="languages">
+            <h2>Langues</h2>
+            <table>
+                <tr>
+                    <td>Français</td>
+                    <td>Courant</td>
+                </tr>
+                <tr>
+                    <td>Anglais</td>
+                    <td>Professionnel</td>
+                </tr>
+                <tr>
+                    <td>Espagnol</td>
+                    <td>Débutant</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="softskills">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Capacité d’adaptation</li>
+                <li>Professionnalisme</li>
+                <li>Rigueur</li>
+                <li>Autonomie</li>
+                <li>Organisation</li>
+                <li>Esprit d’équipe</li>
+                <li>Gestion de projet</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Script pour gérer le menu -->
+    <script>
+        // Sélectionne les éléments du DOM
+        const menuBtn = document.querySelector('.menu-btn');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Gère l'affichage du menu lors du clic sur le bouton
+        menuBtn.addEventListener('click', function() {
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+
+        // Masquer le menu lorsque l'utilisateur clique en dehors de celui-ci
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.menu-btn')) {
+                if (dropdownMenu.style.display === 'block') {
+                    dropdownMenu.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

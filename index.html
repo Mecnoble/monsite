@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Demba Diop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-right: 2px solid #ddd;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Demba Diop</h1>
+        <p>Étudiant en Master 2 Informatique</p>
+    </header>
+    <nav>
+        <a href="#information">Information Personnel</a>
+        <a href="index.html" target="_blank">Mon parcours</a> <!-- Lien vers votre premier site -->
+        <a href="#cv">Mon CV</a>
+        <a href="#objectifs">Mes objectifs</a>
+        <a href="#interets">Intérêts</a>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#information">Information Personnel</a></li>
+                <li><a href="index.html" target="_blank">Mon parcours</a></li> <!-- Lien vers votre premier site -->
+                <li><a href="#cv">Mon CV</a></li>
+                <li><a href="#objectifs">Mes objectifs</a></li>
+                <li><a href="#interets">Intérêts</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="information">
+                <h2>Information Personnel</h2>
+                <p>Je suis actuellement étudiant en Master 2 Informatique, passionné par les nouvelles technologies et le développement de solutions innovantes.</p>
+            </section>
+            <section id="cv">
+                <h2>Mon CV</h2>
+                <p>Vous pouvez consulter mon CV pour plus de détails sur mes compétences et mon expérience professionnelle.</p>
+            </section>
+            <section id="objectifs">
+                <h2>Mes objectifs</h2>
+                <p>Mon objectif est de trouver un stage qui me permettra de mettre en pratique mes compétences en informatique et de contribuer à des projets innovants.</p>
+            </section>
+            <section id="interets">
+                <h2>Intérêts</h2>
+                <p>J'aime explorer les nouvelles technologies, le sport, et lire des livres sur le développement personnel et professionnel.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Demba Diop</p>
+    </footer>
+</body>
+</html>
