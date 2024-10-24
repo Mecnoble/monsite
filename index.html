@@ -15,6 +15,14 @@
             color: white;
             padding: 10px 20px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        header img {
+            border-radius: 50%;
+            height: 50px;
+            margin-right: 20px;
         }
         nav {
             background-color: #0056b3;
@@ -62,12 +70,15 @@
 </head>
 <body>
     <header>
-        <h1>Demba Diop</h1>
-        <p>Étudiant en Master 2 Informatique</p>
+        <img src="image/moi.jpeg" alt="Photo de Demba Diop">
+        <div>
+            <h1>Demba Diop</h1>
+            <p>Étudiant en Master 2 Informatique</p>
+        </div>
     </header>
     <nav>
         <a href="#information">Information Personnel</a>
-        <a href="https://mecnoble.github.io/Mon_Parcours/" target="_blank">Mon parcours</a> <!-- Lien modifié ici -->
+        <a href="https://mecnoble.github.io/Mon_Parcours/" target="_blank">Mon parcours</a>
     </nav>
     <main>
         <div class="content">
